@@ -57,7 +57,6 @@ h3{
     vertical-align: bottom;
     position: relative;
     width: 16.666%;
-/*     height: 225vh; */
    height: 100vmin;
     background-color: black;
     background-repeat: no-repeat;
@@ -102,17 +101,17 @@ h3{
 #a1, #a2, #a3, #a4, #a5  {
   position: relative;
   top:0;
-   height: 100vmin;
+  height: 100vmin;
   opacity: 0;   
   transition: opacity 0.2s ease 0;
   padding: 20px;
 }
-.about + #a1, .experience + #a2, .programming + #a3, .software + #a4, .projects + #a5 {
-   opacity: 0;   
+.about + #a1, .about a #a1, .experience + #a2, .programming + #a3, .software + #a4, .projects + #a5 {
+  opacity: 0;   
   transition: opacity 0.2s ease 0;
 }
-.about:hover + #a1, .experience:hover + #a2, .programming:hover + #a3, .software:hover + #a4, .projects:hover + #a5, #a1:hover , #a2:hover , #a3:hover , #a4:hover , #a5:hover  {
-   opacity: 1;
+.about:hover + #a1, .about a:hover #a1, #a1:hover, .experience:hover + #a2, .programming:hover + #a3, .software:hover + #a4, .projects:hover + #a5,  #a2:hover , #a3:hover , #a4:hover , #a5:hover  {
+  opacity: 1;
   transition: opacity 0.3s ease 0.3s;
 }
 
