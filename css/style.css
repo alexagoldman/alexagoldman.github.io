@@ -19,7 +19,6 @@ body{
   padding: 0.5rem;
   z-index: 3;
 }
-
 .title h1,
 .title h2 {
   margin: 0;
@@ -41,7 +40,9 @@ h3{
 }
 .accordion {
     width: 100%;
-    height: 100vmin;
+/*     height: 225vh; */
+  height: 100vmin;
+/*     overflow:scroll; */
     margin: 0px;
 }
 .accordion .u-list {
@@ -56,6 +57,7 @@ h3{
     vertical-align: bottom;
     position: relative;
     width: 16.666%;
+/*     height: 225vh; */
    height: 100vmin;
     background-color: black;
     background-repeat: no-repeat;
@@ -91,8 +93,6 @@ h3{
 .projects, .accordion .u-list .section-list:nth-child(5) {
     background: #cefff7; /* background: #d8edff;*/
 }
-
-
 .accordion .u-list:hover .section-list {
     width: 4%;
 }
@@ -102,22 +102,16 @@ h3{
 #a1, #a2, #a3, #a4, #a5  {
   position: relative;
   top:0;
+/*   height:225vh; */
    height: 100vmin;
   opacity: 0;   
   transition: opacity 0.2s ease 0;
   padding: 20px;
 }
-
-.about + #a1, .experience + #a2, .programming + #a3, .software + #a4, .projects + #a5 {
-   opacity: 0 !important;   
-  transition: opacity 0.2s ease 0 !important;
+#a1:hover , #a2:hover , #a3:hover , #a4:hover , #a5:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.3s;
 }
-.about:hover + #a1, .experience:hover + #a2, .programming:hover + #a3, .software:hover + #a4, .projects:hover + #a5, #a1:hover , #a2:hover , #a3:hover , #a4:hover , #a5:hover  {
-   opacity: 1 !important;
-  transition: opacity 0.3s ease 0.3s !important;
-}
-
-
 .flex-title {
     color: #000;
     position: fixed;
@@ -150,10 +144,12 @@ h3{
   text-align: center;
 }
 .about-box{
+   /*background: rgba(206, 214, 253, 0.4)!important;*/
   margin: 0% 10% !important;
+
 }
 .about-text {
-  background: rgba(206, 214, 253, 0.4)!important;
+  /*background: rgba(206, 214, 253, 0.4)!important;*/
   text-align:center;
   font-size:16px !important;
   line-height: 22px !important;
@@ -164,7 +160,7 @@ h3{
   text-underline-position: under; 
 }
 .link-mail{
-  font-size:16px !important;
+  font-size:18px !important;
   line-height: 22px !important;
   color: #000000 !important;
   text-decoration: none !important;
@@ -175,7 +171,7 @@ h3{
 .contact{
   text-align: center;
   padding: 0 0px  0px;
-  font-size:16px !important;
+  font-size:18px !important;
   line-height: 22px !important;
   color: #000000 !important;
   text-decoration: none !important;
@@ -684,11 +680,6 @@ i:hover{
     .flex-title {
       display:none;
     }
-    .about + #a1, .experience + #a2, .programming + #a3, .software + #a4, .projects + #a5 {
-   opacity: 1 !important;   
-  transition: opacity 0.2s ease 0 !important;
-}
-
 
     /* -------------------a1----------------- */
     .about-image{
@@ -720,21 +711,21 @@ i:hover{
       text-decoration: none !important;
       overflow: hidden !important;
     }
-    .about-box{
-      margin: 0 5px !important;
-    }
     .about-text{
-      background: rgba(206, 214, 253, 0.4)!important;
-      text-align:center;
-      font-size:15px !important;
-      line-height: 22px !important;
-      padding: 10px 10px;
+      text-align: center;
+      padding: 0 0px  0px;
+      font-size:18px !important;
+      line-height: 20px !important;
+      color: #000000 !important;
+      text-decoration: none !important;
+      overflow: hidden !important;
+      margin: 0 10px !important;
     }
-    .tooltip .tooltiptext5 {
+     .tooltip .tooltiptext5 {
       visibility: hidden;
       width: 80px !important;
-      background-color: rgba(206, 214, 253, 0.4);
-      border: 1px solid rgb(131, 149, 252);
+/*      background-color: rgba(206, 214, 253, 0.4);
+      border: 1px solid rgb(131, 149, 252);*/
       color: #000 !important;
       text-decoration: none;
       text-align: center;
@@ -748,8 +739,8 @@ i:hover{
     .tooltip .tooltiptext {
       visibility: hidden;
       width: 110px !important;
-      background-color: rgba(206, 214, 253, 0.4);
-      border: 1px solid rgb(131, 149, 252);
+/*      background-color: rgba(206, 214, 253, 0.4);
+      border: 1px solid rgb(131, 149, 252);*/
       color: #000;
       text-align: center;
       border-radius: 6px;
@@ -762,8 +753,8 @@ i:hover{
     .tooltip .tooltiptext2 {
       visibility: hidden;
       width: 230px !important;
-      background-color: rgba(206, 214, 253, 0.4);
-      border: 1px solid rgb(131, 149, 252);
+/*      background-color: rgba(206, 214, 253, 0.4);
+      border: 1px solid rgb(131, 149, 252);*/
       color: #000 !important;
       text-decoration: none;
       text-align: center;
@@ -777,8 +768,8 @@ i:hover{
     .tooltip .tooltiptext3 {
       visibility: hidden;
       width: 135px !important;
-      background-color: rgba(206, 214, 253, 0.4);
-      border: 1px solid rgb(131, 149, 252);
+/*      background-color: rgba(206, 214, 253, 0.4);
+      border: 1px solid rgb(131, 149, 252);*/
       color: #000 !important;
       text-decoration: none;
       text-align: center;
@@ -792,8 +783,8 @@ i:hover{
     .tooltip .tooltiptext4 {
       visibility: hidden;
       width: 85px !important;
-      background-color: rgba(206, 214, 253, 0.4);
-      border: 1px solid rgb(131, 149, 252);
+/*      background-color: rgba(206, 214, 253, 0.4);
+      border: 1px solid rgb(131, 149, 252);*/
       color: #000 !important;
       text-decoration: none;
       text-align: center;
@@ -806,7 +797,59 @@ i:hover{
     }
 
     /* ------------------a2------------------ */
-   
+    .box {
+      background: rgba(255,255,255,.5);
+      position: relative;
+      width: 300px;
+      height: 115px;
+      padding: 10px;
+      border: 3px solid #000;
+      border-radius: 6px;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .box:hover .popup {
+      display: block;
+    }
+    .popup {
+      position: absolute;
+      width: 270px;
+      border-radius: 10px;
+      top: 100%;
+      left: 50%;
+      padding: 12px 20px;
+      background-color: #000000;
+      color: #f5f5f5;
+      font-size:14px;
+      line-height: 20px;
+      margin-top: 15px;
+      margin-left: -100px;
+      box-sizing: border-box;
+      display: none;
+      z-index:100;
+      text-align:left;
+    }
+    .popup_tile {
+      position: absolute;
+      bottom: 100%;
+      left: 10%;
+      width: 0;
+      height: 0;
+      border-color: #000000;
+      border-style: solid;
+      border-top-width: 0px;
+      border-right-width: 10px;
+      border-bottom-width: 10px;
+      border-left-width: 0px;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      margin-left: -5px;
+      z-index:100;
+    }
+    .box, .popuped{
+      margin: 10px !important;
+    } 
     .resume .func .work {
       width: 90%;
       margin: 0 0 0 10px !important;
@@ -860,6 +903,7 @@ i:hover{
 .wrapper .timeline .status:nth-child(odd) {
   float: left;
   margin-bottom: 50px;
+  /*border-radius: 10px 0 10px 10px;*/
 }
 .wrapper .timeline .status:nth-child(odd):before {
   content: "";
@@ -934,8 +978,13 @@ i:hover{
     width: 95% !important;
      overflow: hidden !important;
   }
+  .a2-head{
+/*     padding-left: 45% !important; */
+/*     padding-right: 45% !important; */
+  }
   .wrapper .timeline {
     padding: 0px 0 0px 42px;
+/*     padding-left: 42px; */
     box-sizing: border-box;
   }
   .wrapper .timeline .status {
