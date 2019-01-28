@@ -8,6 +8,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
   
@@ -27,39 +28,47 @@
                       <div class="flex-title about"><a href="#">About</a></div>
                       <div id="a1" style="overflow: auto !important;">
                         <center>
-                        <h1 style="" class="page-header">Meet Alexa</h1>
+                        <h1 style=""class="page-header">Meet Alexa</h1>
                         <br><br>
                         <img src="https://cdn.glitch.com/32002dd8-1d01-4204-8ed0-8a0b9b188b89%2Fme3.jpg?1515801802387" class="about-image">
-                        
-                          <p style="" class="about-text">
-                            <br><br>
-                            Hi! My name is Alexa and I am a web developer, avid runner, and music enthusist. I&nbsp;currently develop HTML emails that are data-driven, hyper-personalized, and fully-automated and developed a hockey data site based on coaching&nbsp;data. <br><br><br>
-                          </p>
-                          <table style="margin: 0px 4px; display:inline-block;" class="contact-table hide_for_mobile">
-                            <tr>
-                              <td style="text-align:left;" class="link-mail">Phone </td>
-                              <td style="width:25px;" class="break"> </td>
-                              <td style="text-align:left;" class="contact"> <a class="link-mail" href="tel:15164777826">+1 516 477 7826</a></td>
-                            </tr>
-                            <tr>
-                              <td style="text-align:left;" class="link-mail">Email </td>
-                              <td class="break"> </td>
-                              <td style="text-align:left;" class="contact"> <a class="link-mail" href="mailto:alexaerikagoldman@gmail.com">alexaerikagoldman@gmail.com</a></td>
-                            </tr>
-                            <tr>
-                              <td style="text-align:left;" class="link-mail">LinkedIn</td>
-                              <td style="width:25px;" class="break"> </td>
-                              <td style="text-align:left;" class="contact"> <a class="link-mail" href= "https://www.linkedin.com/in/alexa-goldman/">https://www.linkedin.com/in/alexa-goldman/</a></td>
-                            </tr>
-                          </table>
-                          <!--  mobile version  -->
-                          <p style="display:none;" class="about-text mobile_only">
-                          <h3 style="text-decoration: underline; text-underline-position: under !important; display:none;" class="mobile_only">Connect</h3><br>
-                          <a style="display:none;" class="about-text mobile_only" href="tel:15164777826">+1 516 477 7826</a>
-                          <a style="display:none;" class="link-mail mobile_only" href="mailto:alexaerikagoldman@gmail.com">alexaerikagoldman@gmail.com</a>
-                          <a style="display:none;" class="link-mail mobile_only" href= "https://www.linkedin.com/in/alexa-goldman/">https://www.linkedin.com/in/alexa-goldman/</a>
-                          </p>
 
+                        <div class="about-box">
+                          <br>
+                          <div style="border-radius: 3px;box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+                          <p style="" class="about-text">
+                            <br>
+                            Hi! My name is Alexa and I am a web developer, avid runner, and music enthusist. I&nbsp;currently develop HTML emails that are data-driven, hyper-personalized, and fully-automated and developed a hockey data site based on coaching&nbsp;data. <br><br>
+                            <div style="background: rgba(206, 214, 253, 0.4)!important; padding: 0 0 30px;">
+                              <div style="padding: 0 5px; display: inline-block;">
+                                <div class="tooltip"><i class="fas fa-mobile-alt" style="font-size:30px;"></i>
+                                  <span class="tooltiptext">+1 516 477 7826</span>
+                                </div>
+                              </div>
+                              <div style="padding: 0 5px; display: inline-block;">
+                                <div class="tooltip"><i class="far fa-envelope" style="font-size:30px;"></i>
+                                  <span class="tooltiptext2"><a class="hover-links" href="mailto:alexaerikagoldman@gmail.com">alexaerikagoldman@gmail.com</a></span>
+                                </div>
+                              </div>
+                              <div style="padding: 0 5px; display: inline-block;">
+                                 <div class="tooltip"><i class="fab fa-linkedin-in" style="font-size:30px;"></i>
+                                  <span class="tooltiptext3"><a class="hover-links" href="https://www.linkedin.com/in/alexa-goldman/">@alexa-goldman</a></span>
+                                </div>
+                              </div>
+                              <div style="padding: 0 5px; display: inline-block;">
+                                 <div class="tooltip"><i class="fab fa-instagram" style="font-size:30px;"></i>
+                                  <span class="tooltiptext4"><a class="hover-links" href="https://www.instagram.com/ay0lexx">@ay0lexx</a></span>
+                                </div>
+                              </div>
+                              <div style="padding: 0 5px; display: inline-block;">
+                                <div class="tooltip"><i class="fab fa-github" style="font-size:30px;"></i>
+                                  <span class="tooltiptext5"><a class="hover-links" href="https://www.github.com/aeg451">@aeg451</a></span>
+                                </div>
+                              </div>
+                            </div>
+                          </p>
+                         
+                        </div>
+                        </div>
                         <div style="margin-bottom:20%;">
                           <br> &nbsp; 
                         </div>
@@ -262,7 +271,8 @@
                       <div class="flex-title projects"><a href="#">Projects</a></div>
                       <div id="a5" style="overflow: auto !important;">
                       <center>
-                        <h1 style="" class="page-header">Projects</h1><br><br>
+                        <h1 style="" class="page-header">Projects</h1><br>
+                        <h4 style="" class="">Click to see examples</h4><br><br>
 
                         <section id="projects">
 
