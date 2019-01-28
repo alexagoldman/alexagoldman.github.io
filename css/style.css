@@ -149,7 +149,7 @@ h3{
 
 }
 .bg-about{
-  background: rgba(206, 214, 253, 0.4) !important;
+  background: rgba(206, 214, 253, 0.4);
 }
 .about-text {
   /*background: rgba(206, 214, 253, 0.4)!important;*/
@@ -654,7 +654,7 @@ i:hover{
       height: 150% !important;
       top: 2vh;
       text-align:center;
-      width: 75%;
+      width: 80%;
       margin: 0 auto;
       opacity: 1;
       transition: opacity 0.2s ease 0;
@@ -693,6 +693,9 @@ i:hover{
       z-index: 1;
       text-align: center;
     }
+     .about-box{
+      margin: 0 5px !important;
+    }
     .link-mail{
       text-align: center;
       padding: 0 0px  0px;
@@ -716,13 +719,13 @@ i:hover{
     }
     .about-text{
       text-align: center;
-      padding: 0 0px  0px;
+      padding: 0 0px 0px !important;
       font-size:18px !important;
       line-height: 20px !important;
       color: #000000 !important;
       text-decoration: none !important;
       overflow: hidden !important;
-      margin: 0 10px !important;
+      margin: 0 8px !important;
     }
      .tooltip .tooltiptext5 {
       visibility: hidden;
