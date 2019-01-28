@@ -108,12 +108,12 @@ h3{
   padding: 20px;
 }
 .about + #a1, .experience + #a2, .programming + #a3, .software + #a4, .projects + #a5 {
-   opacity: 0 !important;   
-  transition: opacity 0.2s ease 0 !important;
+   opacity: 0;   
+  transition: opacity 0.2s ease 0;
 }
 .about:hover + #a1, .experience:hover + #a2, .programming:hover + #a3, .software:hover + #a4, .projects:hover + #a5, #a1:hover , #a2:hover , #a3:hover , #a4:hover , #a5:hover  {
-   opacity: 1 !important;
-  transition: opacity 0.3s ease 0.3s !important;
+   opacity: 1;
+  transition: opacity 0.3s ease 0.3s;
 }
 
 .flex-title {
