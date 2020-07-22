@@ -292,14 +292,14 @@
 			document.onreadystatechange = function() { 
 			    if (document.readyState !== "complete") { 
 				document.querySelector( 
-				  ".wrapper").style.visibility = "hidden"; 
+				  "#wrapper").style.visibility = "hidden"; 
 				document.querySelector( 
 				  "#loader").style.visibility = "visible"; 
 			    } else { 
 				document.querySelector( 
 				  "#loader").style.display = "none"; 
 				document.querySelector( 
-				  ".wrapper").style.visibility = "visible"; 
+				  "#wrapper").style.visibility = "visible"; 
 			    } 
 			}; 
 		 	</script> 
