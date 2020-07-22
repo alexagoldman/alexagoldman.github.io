@@ -7,10 +7,35 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-    <script src="https://kit.fontawesome.com/54e07e850b.js" crossorigin="anonymous"></script>
+    		<script src="https://kit.fontawesome.com/54e07e850b.js" crossorigin="anonymous"></script>
+		<style> 
+			#loader { 
+			    border: 12px solid #f3f3f3; 
+			    border-radius: 50%; 
+			    border-top: 12px solid #444444; 
+			    width: 70px; 
+			    height: 70px; 
+			    animation: spin-loader 1s linear infinite; 
+			} 
+
+			@keyframes spin-loader { 
+			    100% { 
+				transform: rotate(360deg); 
+			    } 
+			} 
+
+			.center-loader { 
+			    position: absolute; 
+			    top: 0; 
+			    bottom: 0; 
+			    left: 0; 
+			    right: 0; 
+			    margin: auto; 
+			} 
+		</style> 
 	</head>
 	<body class="is-preload">
-
+	<div id="loader" class="center-loader"></div> 
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -263,7 +288,21 @@
 					<div class="copyright">2020 - Alexa Goldman</div>
 
 			</div>
-
+			<script> 
+				document.onreadystatechange = function() { 
+				    if (document.readyState !== "complete") { 
+					document.querySelector( 
+					  "body").style.visibility = "hidden"; 
+					document.querySelector( 
+					  "#loader").style.visibility = "visible"; 
+				    } else { 
+					document.querySelector( 
+					  "#loader").style.display = "none"; 
+					document.querySelector( 
+					  "body").style.visibility = "visible"; 
+				    } 
+				}; 
+			</script> 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
