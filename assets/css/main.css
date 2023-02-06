@@ -219,6 +219,15 @@ input, select, textarea {
 	.noTransform{
 		text-transform: none;
 	}
+	.imgShadow{
+		box-shadow: 0px 0px 34px -7px rgba(196,197,230,1);
+		-webkit-box-shadow: 0px 0px 34px -7px rgba(196,197,230,1);
+		-moz-box-shadow: 0px 0px 34px -7px rgba(196,197,230,1);
+	}
+	a.disable_link {
+		pointer-events: none;
+		cursor: default;
+	  }
 	h1 {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 5rem;
