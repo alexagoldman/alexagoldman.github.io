@@ -3667,9 +3667,9 @@ input, select, textarea {
 							margin-bottom: 0;
 						}
 
-							#wrapper > section.intro > header ul.actions {
+							/* #wrapper > section.intro > header ul.actions {
 								display: none;
-							}
+							} */
 
 							#wrapper > section.intro > header > * {
 								margin-left: 0;
@@ -3900,4 +3900,7 @@ input, select, textarea {
 			padding: 4rem;
 		}
 
+	}
+	@media screen and (max-width: 1152px) {
+		.hide { width:0 !important; height:0 !important; font-size:0 !important; line-height:0 !important; overflow:hidden !important; float:left !important; display:none !important; }
 	}
